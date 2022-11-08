@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/bahnschrift.ttf")
+    format("truetype-variations");
+  font-weight: 1 999;
+}
+@font-face {
+  font-family: "Bahnschrift Condensed";
+  src: url("../fonts/bahnschrift.ttf")
+    format("truetype-variations");
+  font-weight: 1 999;
+} 
+html,body{
+	background:#f5f8fa;
+}
+body{
+	font-family: 'Bahnschrift', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size:16px;
+	font-weight:300;
+	color:#525252;
+}
+.container{
+	background:#fff;
+	padding:2rem;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+canvas, svg{
+	max-width:100%;
+	height:auto;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-family: 'Barlow Condensed', 'Bahnschrift', sans-serif;
+    font-weight: 600;
+	color:#001334;
+}
+.h1, h1 {
+    font-size: 2.1875rem;
+}
+.h2, h2{
+    margin-bottom: 0.5rem;
+}
+.h3, h3{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.table{
+	border: 1px solid #eef0f6;
+	font-size:14px;
+    margin-top: 1rem;
+}
+.table td, .table th {
+    padding: 0.5rem 0.75rem;
+}
+
+.table thead th, .head {
+    background: #788585 !important;
+    color: #fff !important;
+    border-color:#788585 !important;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+ 
+.table td, .table th,
+.table-bordered td, .table-bordered th {
+    border-color: #eef0f6;
+}
+
+.header .top {
+    background: #001b49;
+    color: #fff;
+}
+.header h1{
+	color:#ff9933;
+}
+.header .date svg {
+    margin: 0 5px 2px 0;
+}
+.header .figure:before {
+    content: '';
+    background: #001b49;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: -4rem;
+    right: -4rem;
+    top: 0;
+    z-index: 0;
+}
+
+.header .figure {
+    position: relative;
+    display: block;
+}
+
+.header .figure img {
+    position: relative;
+    animation: 3;
+    width: 100%;
+}
+.text-primary{
+	color:#3399ff !important;
+}
+.page{
+	margin-bottom: 30px;
+}
+.list-contents {
+    padding: 3rem;
+    background:#f7f7f7 !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+.list-contents ul {
+	clear:both;
+}
+.list-contents ul ul{
+	margin:1rem 0 0 1rem;
+}
+.list-contents ul li a:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.list-contents ul li {
+    position: relative;
+	margin: 0 0 1rem;
+}
+.list-contents ul li a{
+	position:relative;
+	display: block;
+}
+.list-contents ul li a:before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #cdcdcd;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.list-contents ul li .title, .list-contents ul li .num {
+    background: #f7f7f7!important;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    padding: 0 15px 0 0;
+    float: left;
+}
+.list-contents ul li .num{
+    float:right;
+    padding: 0 0 0 15px;
+    font-style: normal;
+}
+
+.list-contents ul li a {
+    text-transform: uppercase;
+    color: #2e2e2e;
+}
+.bg-danger{
+	background-color:#ff0000 !important;
+	
+}
+.text-danger{
+	color:#ff0000 !important;
+}
+.bg-warning{
+	background-color:#f6ba04 !important;
+}
+.text-warning{
+	color:#f6ba04 !important;
+}
+.bg-success{
+	background-color:#51b95a !important;
+}
+.text-success{
+	color:#51b95a !important;
+}
+.bg-info{
+	background-color:#00a2de !important;
+}
+.text-info{
+	color:#00a2de !important;
+}
+
+.table .cell-indication{
+	position:relative;
+}
+.table .indication {
+    position:relative;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	line-height: 38px;
+	min-width:35px;
+	padding:0rem 0.75rem;
+}
+.sec-list-contents h2 .text{
+    color: #7e7e7e;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    display: inline-block;
+    padding: 0.35em 1em;
+    border-radius: 1em;
+}
+
+.sec-list-contents h2 {
+    margin: 0 0 -2.75rem;
+}
+
+@media (min-width:768px){
+	.container{
+		padding:4rem;
+	}
+	.table td, .table th {
+		padding: 0.5rem 1rem;
+	}
+}
+@media print{
+	html,body{
+		background:#fff;
+	}
+	body {-webkit-print-color-adjust: exact;}
+	@page{
+		margin:0;
+	}
+	 div.page
+	  {
+		page-break-after: always;
+		page-break-inside: avoid;
+		margin: 0;
+	  }
+	.page-break{  page-break-after: always;
+        page-break-inside: avoid; }
+	
+}
